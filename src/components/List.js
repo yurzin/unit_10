@@ -1,7 +1,11 @@
-const List = user => {
+import React from "react";
+
+const List = users => {
+    const { user } = users;
+
     return (
         <ul>
-            {user.user.map( item =><li key={item.passport}>{item.name} {item.age}</li> )}
+            {user.map( item =><li key={item.passport}>{item.name} {item.age}</li> )}
         </ul>
     );
 };

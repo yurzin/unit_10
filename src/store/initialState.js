@@ -1,6 +1,6 @@
 
 const initialState = {
-    user: [
+    users: [
         {
             passport: '#3802 №986355',
             name: 'Sergey',

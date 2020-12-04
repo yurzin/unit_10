@@ -1,7 +1,7 @@
-const user = (state = [], action) => {
+const users = (state = [], action) => {
     switch (action.type) {
         case 'ADD_USER':
-            console.log('we add new user');
+            console.log('we add new users');
             console.log(state);
             return [
                 ...state,
@@ -16,4 +16,4 @@ const user = (state = [], action) => {
     }
 };
 
-export default user;
+export default users;

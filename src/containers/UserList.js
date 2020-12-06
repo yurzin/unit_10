@@ -1,12 +1,12 @@
-import { connect } from "react-redux";
+import { useSelector } from 'react-redux';
 import List from '../components/List';
+import React from "react";
 
-function mapStateToProps(state) {
-    const { users } = state;
-    return { user : users };
-}
+const UserList = () => {
+    const users = useSelector(state => state.users);
+    return (
+        <List user={users}/>
+    );
+};
 
-export default connect(
-    mapStateToProps,
-    null
-)(List);
+export default UserList;

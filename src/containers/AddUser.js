@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addNewUser } from '../actions';
 
 const AddUser = () => {
@@ -18,13 +18,13 @@ const AddUser = () => {
     return (
         <div>
             <form onSubmit={formHandler}>
-                <input name="passport" defaultValue="" />
-                <input name="name" defaultValue="" />
-                <input name="age" defaultValue="" />
+                <input name="passport"/>
+                <input name="name"/>
+                <input name="age"/>
                 <button type="submit">Add new user</button>
             </form>
         </div>
     )
 };
 
-export default connect()(AddUser)
+export default AddUser

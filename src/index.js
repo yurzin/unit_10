@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
@@ -12,11 +11,9 @@ import initialState from './store/initialState';
 const store = createStore(rootReduser, initialState);
 
 ReactDOM.render(
-    <React.StrictMode>
         <Provider store={store}>
             <App/>
-        </Provider>
-    </React.StrictMode>,
+        </Provider>,
     document.getElementById('root')
 );
 
